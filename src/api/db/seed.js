@@ -306,7 +306,7 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const campaigns = db.collection('campaigns');
   const campaignResult = await campaigns.insertOne({
-    domains: ['support.callstockton.com:5000'],
+    domains: ['45.79.109.29:5000'],
     name: 'Friendbank Dev',
     copy,
     config,
