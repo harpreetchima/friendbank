@@ -95,7 +95,7 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const copy = JSON.stringify({
     'idQuestions.support.label': {
-      [ENGLISH]: 'Will you vote to re-elect Ed Markey to the United States Senate on September 1st?',
+      [ENGLISH]: 'Will you support CALL Stockton - a Crisis Assistance Lifeline for Stockton?',
       [SPANISH]: '¿Votará para reelegir a Ed Markey al Senado de los Estados Unidos el 1 de septiembre?',
     },
     'idQuestions.support.options': {
@@ -117,8 +117,8 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
       ],
     },
     'idQuestions.volunteer.label': {
-      [ENGLISH]: 'Will you volunteer with Team Markey?',
-      [SPANISH]: '¿Quiéres ser voluntario con el Equipo Markey?',
+      [ENGLISH]: 'Will you volunteer with CALL Stockton?',
+      [SPANISH]: '¿Quiéres ser voluntario con el CALL Stockton?',
     },
     'idQuestions.volunteer.options': {
       [ENGLISH]: [
@@ -306,7 +306,7 @@ const { TRANSACTIONAL_EMAIL } = require('../../shared/emailFrequency');
 
   const campaigns = db.collection('campaigns');
   const campaignResult = await campaigns.insertOne({
-    domains: ['localhost:5000'],
+    domains: ['support.callstockton.com:5000'],
     name: 'Friendbank Dev',
     copy,
     config,
